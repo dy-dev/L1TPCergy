@@ -4,9 +4,8 @@ public class Reductions {
     private static String notEnoughChange = "You did not give enough money";
     public static void ReductionExercise() {
         float price = 182.26f;
-        Scanner scan = new Scanner(System.in);
         System.out.println("How many reductions?");
-        int nbReduction = scan.nextInt();
+        int nbReduction = Main.scan.nextInt();
         float[] reductions = new float[nbReduction];
         float prev = 1.f;
         for (int i = 0; i < nbReduction; i++) {
@@ -16,7 +15,7 @@ public class Reductions {
             }
             do {
                 System.out.println("Give me the " + (i + 1) + " reduction you want to apply");
-                reductions[i] = scan.nextFloat();
+                reductions[i] = Main.scan.nextFloat();
             } while (prev < reductions[i]);
         }
         price = applyReductions(price, reductions);
@@ -25,7 +24,7 @@ public class Reductions {
         String change = "";
         do {
             System.out.println("Please give me the money");
-            int nbBills = scan.nextInt();
+            int nbBills = Main.scan.nextInt();
              change = checkNbBills(price, nbBills);
         }while(change.equals(notEnoughChange));
         System.out.println(change);
