@@ -10,7 +10,8 @@ public class Main {
         scan = new Scanner(System.in);
         //Reductions.ReductionExercise();
 //        Loan.takeLoan();
-        InterestRate.placeMoney();
+//        InterestRate.placeMoney();
+        Tierce.winningOdds();
     }
 
 }
