@@ -1,6 +1,9 @@
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        float price = 10.f;
+        price -= 0.5*price;
+        price -= 0.3*price;
+        System.out.println("New price is : " + price);
     }
 }
