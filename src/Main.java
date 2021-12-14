@@ -11,7 +11,9 @@ public class Main {
         //Reductions.ReductionExercise();
 //        Loan.takeLoan();
 //        InterestRate.placeMoney();
-        Tierce.winningOdds();
+//        Tierce.winningOdds();
+        //Calculs.playGame();
+        Prime.getNumbers();
     }
 
 }
